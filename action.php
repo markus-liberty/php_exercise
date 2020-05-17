@@ -37,7 +37,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
     
-    $sql = ("INSERT INTO orders (name, phone, email, address, orders, time) VALUES ('".$name."', '".$phone."', '".$email."', '".$address."', '".$order."', '".$time."')");
+    $sql = ("INSERT INTO orders (name, phone, email, address, orders, time, total, amount) VALUES ('".$name."', '".$phone."', '".$email."', '".$address."', '".$order."', '".$time."', '".$total."', '".$amount."')");
     
     if($conn->query($sql) === TRUE){
         echo "RECORD WAS DONE";
